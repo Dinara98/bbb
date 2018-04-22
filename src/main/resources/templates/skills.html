@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleof.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="form-group">
+            <form action="#" th:action="@{/skills/}" th:object="${skill}" method="post">
+                <label form="label">Label</label>
+                <input type="text" id="label" name="label" th:field="*{label}"
+                       class="form-control" placeholder="Дағдыны еңгізіңіз"/>
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" th:field="*{description}"
+                       class="form-control" placeholder="Дағдыны сипаттаңыз"/>
+                <br/>
+                <button type="submit" class="btn btn-primary">Сақтау</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
